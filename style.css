@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  background: whitesmoke;
+}
+
+.navbar {
+  background: rgb(236, 236, 26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  width: 100%;
+  max-width: 1024px;
+  height: 50px;
+  display: flex;
+  padding: 4px;
+  align-items: center;
+}
+
+.heading h1 {
+  font-size: 25px;
+}
+
+.heading h1 i {
+  margin-right: 4px;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+}
+.btn-div div {
+  display: flex;
+  width: 100%;
+  max-width: 1024px;
+  margin-top: 10px;
+  padding: 10px;
+  margin-left: 15px;
+  justify-content: end;
+}
+
+.add {
+  border: none;
+  background: white;
+  padding: 10px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  display: flex;
+  background: rgb(236, 236, 26);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: -32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle .icon-arrow {
+  font-size: 20px;
+}
+
+.button-text {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+}
+
+.notesContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1024px;
+  margin-top: 20px;
+  gap: 50px;
+}
+
+.note {
+  background: white;
+  position: relative;
+  padding: 20px;
+  width: max-content;
+  height: max-content;
+  width: 300px;
+  height: 200px;
+  overflow-x: hidden;
+  border-radius: 20px;
+}
+
+.note::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.operation {
+  position: sticky;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  padding: 4px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.operation button {
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.operation .edit i {
+  background: green;
+  color: white;
+  padding: 2px;
+}
+
+.operation .delete i {
+  background: red;
+  color: white;
+  padding: 2px;
+}
+
+.main {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.note textarea {
+  margin-top: 30px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+  .notesContainer {
+    justify-content: center;
+  }
+}
